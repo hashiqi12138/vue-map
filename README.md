@@ -1,2 +1,1 @@
-# vue-map
-vue-map
+# Vue Map
