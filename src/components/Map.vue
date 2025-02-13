@@ -32,18 +32,17 @@ function toggle() {
     <overlay :longitude="112" :latitude="24">
       <div class="test">this is a overlay</div>
       <div>this is a overlay</div>
+      <button
+        style="z-index: 10000; position: absolute"
+        class="control"
+        @click="toggle"
+      >
+        toggle marker
+      </button>
     </overlay>
 
-    <!-- <feature v-if="show" :longitude="115" :latitude="24" :icon="icon" /> -->
+    <feature v-if="show" :longitude="115" :latitude="24" :icon="icon" />
   </map-app>
-
-  <!-- <button
-    style="z-index: 10000; position: absolute"
-    class="control"
-    @click="toggle"
-  >
-    toggle marker
-  </button> -->
 </template>
 
 <style scoped>
